@@ -35,6 +35,7 @@ function Grabar() {
 
 function Stop() {
   recognition.stop();
+  detenerContador();
   hiden();
 }
 
@@ -46,7 +47,9 @@ function hiden() {
 
 function detenerContador() {
   clearInterval(intervalo);
+  hiden();
   console.log("Contador detenido");
+  recognition.stop();
   // Llamar a tu función cuando se alcance el límite
   // por ejemplo: ejecutarAlAlcanzarLimite();
 }
@@ -59,7 +62,6 @@ function iniciarContador() {
     if (segundosRestantes >= 0) {
       actualizarContador(segundosRestantes);
     } else {
-      Stop();
       detenerContador();
     }
   }, 1000);
