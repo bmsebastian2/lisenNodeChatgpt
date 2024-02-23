@@ -10,10 +10,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
+}
+
+textarea {
+    text-align: center;
 }
 
 .hiden {
     opacity: 0;
     transition: opacity 0.6s linear;
+}
+
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }

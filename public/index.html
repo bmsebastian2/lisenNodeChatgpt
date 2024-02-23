@@ -11,34 +11,33 @@
 <body>
     <div>
 
-        <div class="d-flex-col align-items-center">
-            <h1>Hello, world!</h1>
+        <div class="d-flex-col align-items-center" id="container">
 
-            <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-primary btn-lg" id="grabar">Grabar</button>
-                <div id="displayLoading" class="hiden">
-                    <strong role="status">Grabando...</strong>
-                    <div class="spinner-border ms-auto" aria-hidden="true"></div>
+            <div>
+                <h1>Hello, world!</h1>
+            </div>
+
+
+            <button type="button" class="btn btn-primary btn-lg m-2" id="grabar">Grabar</button>
+            <button type="button" class="btn btn-dark  btn-lg m-2 hiden" id="stop">Detener</button>
+
+            <div id="displayLoading" class="hiden">
+                <div class="spinner-grow text-danger m-4" role="status">
+                    <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
-            <button type="button" class="btn btn-dark hiden" id="stop">Stop</button>
+
             <div>
-                <!-- <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1 texto" rows="3"></textarea>
-                </div> -->
+
                 <div class="mb-3">
-                    <!-- <span class="input-group-text">extarea</span> -->
-                    <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
-                    <textarea class="form-control" aria-label="With textarea" id="texto" rows="4"></textarea>
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Texto</label> -->
+                    <textarea class="form-control hiden " aria-label="With textarea" id="texto" rows="4"></textarea>
                 </div>
             </div>
             <label for="" id="tiempoRestante"></label>
 
         </div>
-        <div>
 
-        </div>
     </div>
 
 
